@@ -19,7 +19,7 @@ const UserList: React.FC = () => {
   const [sortBy, setSortBy] = useState<string>('asc');
   const [startDate, setStartDate] = useState<string>('');
   const [endDate, setEndDate] = useState<string>('');
-  const [filteredUsers, setFilteredUsers] = useState<User[]>([]); // Armazenar os resultados da pesquisa
+  const [filteredUsers, setFilteredUsers] = useState<User[]>([]); 
 
   useEffect(() => {
     api.get('/usuarios')

@@ -21,9 +21,9 @@ const DeleteUser: React.FC = () => {
       .then((response) => {
         setDeleteMessage('Usuário excluído com sucesso.');
         setTimeout(() => {
-          setDeleteMessage(''); // Limpa a mensagem após alguns segundos
+          setDeleteMessage(''); 
           router.push('http://localhost:3001');
-        }, 3000); // A mensagem será limpa após 3 segundos
+        }, 3000); 
       })
       .catch((error) => {
         setDeleteMessage('Erro ao excluir o usuário. Por favor, tente novamente.');

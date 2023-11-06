@@ -11,9 +11,9 @@ export default function ModalUser() {
 
   return (
     <>
-      <Button onPress={onOpen} className={styles['open-modal-button']}>Open Modal</Button> {/* Aplicar a classe open-modal-button do módulo CSS */}
+      <Button onPress={onOpen} className={styles['open-modal-button']}>Open Modal</Button> 
 
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className={styles.modal}> {/* Aplicar a classe modal do módulo CSS */}
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className={styles.modal}> 
         <ModalContent>
           {(onClose) => (
             <>

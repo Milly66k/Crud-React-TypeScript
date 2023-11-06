@@ -7,7 +7,7 @@ interface FormData {
   name: string;
   email: string;
   phone: string;
-  userId: number; // Adicione o campo userId
+  userId: number; 
 }
 
 const EditUser: React.FC = () => {
@@ -15,7 +15,7 @@ const EditUser: React.FC = () => {
     name: '',
     email: '',
     phone: '',
-    userId: 0, // Inicialize com o valor do ID do usuário que deseja editar
+    userId: 0, 
   });
   const [errorMessage, setErrorMessage] = useState<string>('');
 

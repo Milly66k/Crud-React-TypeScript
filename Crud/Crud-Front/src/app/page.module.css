@@ -1,4 +1,4 @@
-/* Estilos gerais */
+
 .App {
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
   padding: 10px;
 }
 
-/* Estilos da lista na página principal */
+
 .home-page-list {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -84,7 +84,6 @@
   transition: background-color 0.3s;
 }
 
-/* Estilos para a seção de pesquisa e classificação */
 .search-section {
   display: flex;
   align-items: center;
@@ -132,7 +131,6 @@
   transition: background-color 0.3s;
 }
 
-/* Estilos do modal */
 .modal {
   width: 500px;
   border-radius: 10px;
@@ -185,7 +183,7 @@
   margin-right: 10px;
 }
 
-/* Estilos para a seção de adição de usuário */
+
 .add-user-container {
   text-align: center;
 }
@@ -210,7 +208,7 @@
   background-color: #ddd;
 }
 
-/* Estilos para a seção de edição de usuário */
+
 .edit-user-container {
   text-align: center;
 }
@@ -244,12 +242,12 @@
 }
 
 .delete-user-container {
-  text-align: center; /* Centraliza o conteúdo */
+  text-align: center; 
 }
 
 .delete-user-input {
-  margin: 10px 0; /* Adiciona espaço entre os inputs */
-  border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior */
+  margin: 10px 0; 
+  border-bottom: 1px solid #ccc;
   padding: 5px;
   width: 100%;
 }
@@ -262,11 +260,11 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  display: block; /* Centraliza horizontalmente */
+  display: block; 
   margin: 0 auto;
 }
 
 .delete-user-button:hover {
-  background-color: #ddd; /* Cor de fundo mais clara no hover */
+  background-color: #ddd; 
 }
 
