@@ -18,9 +18,6 @@ const UserList: React.FC = () => {
   const [sortBy, setSortBy] = useState<string>('asc'); // "asc" ou "desc"
 
   useEffect(() => {
-    // Faça uma chamada para a API do backend para obter a lista de usuários aqui
-    // Atualize o estado "users" com os dados obtidos do backend
-    // Exemplo de chamada à API usando axios:
     api.get('/usuarios')
       .then((response) => {
         setUsers(response.data);
@@ -31,8 +28,6 @@ const UserList: React.FC = () => {
   }, []);
 
   const handleSearch = () => {
-    // Implemente a lógica de pesquisa por nome e faça a chamada para a API do backend
-    // Exemplo de chamada à API usando axios para pesquisa por nome:
     api.get(`/usuarios?nome=${searchTerm}`)
       .then((response) => {
         setUsers(response.data);
@@ -43,8 +38,6 @@ const UserList: React.FC = () => {
   };
 
   const handleSort = () => {
-    // Implemente a lógica para classificar a lista de usuários e faça a chamada para a API do backend
-    // Exemplo de chamada à API usando api para classificação:
     api.get(`/usuarios?ordem=${sortBy}`)
       .then((response) => {
         setUsers(response.data);

@@ -12,10 +12,10 @@ const EditUser: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '' });
   const [errorMessage, setErrorMessage] = useState<string>('');
 
-  const navigate = useNavigate(); // Use useNavigate para navegação
+  const navigate = useNavigate(); 
 
   const handleSubmit = () => {
-    const userId = 1; // Exemplo de ID do usuário
+    const userId = 1; 
     const updatedData = {
       name: formData.name,
       email: formData.email,
@@ -25,12 +25,12 @@ const EditUser: React.FC = () => {
     api
       .put(`/usuarios/${userId}`, updatedData)
       .then((response) => {
-        // Se a atualização for bem-sucedida, você pode redirecionar para a lista de usuários
-        navigate('/lista-de-usuarios'); // Use navigate para redirecionar
+      
+        navigate('/lista-de-usuarios'); 
 
       })
       .catch((error) => {
-        // Em caso de erro, você pode exibir uma mensagem de erro para o usuário
+        
         setErrorMessage('Erro ao atualizar usuário. Por favor, tente novamente.');
       });
   };

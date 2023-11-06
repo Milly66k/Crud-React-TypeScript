@@ -36,13 +36,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-background-color: #000; /* Fundo preto */
+background-color: #000; 
 }
 
 /* Estilo para o contêiner de lista */
 .home-page-list {
-background-color: #000; /* Fundo preto */
-color: #fff; /* Texto branco */
+background-color: #000; 
+color: #fff; 
 border-radius: 8px;
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 padding: 20px;
@@ -50,26 +50,26 @@ max-width: 800px;
 width: 100%;
 }
 
-/* Estilo para títulos */
+
 .home-page-list h1 {
 font-size: 24px;
 margin-bottom: 20px;
 }
 
-/* Estilo para campos de entrada de texto */
+
 .home-page-list input[type="text"] {
 width: 100%;
-padding: 8px; /* Reduzir o tamanho do preenchimento */
+padding: 8px; 
 margin-bottom: 10px;
-border: 1px solid #fff; /* Borda branca */
+border: 1px solid #fff; 
 border-radius: 4px;
-font-size: 14px; /* Tamanho da fonte reduzido */
+font-size: 14px; 
 }
 
 /* Estilo para botões */
 .home-page-list button {
-background-color: #fff; /* Fundo branco */
-color: #000; /* Texto preto */
+background-color: #fff; 
+color: #000;
 border: none;
 padding: 10px 20px;
 border-radius: 4px;
@@ -78,50 +78,50 @@ transition: background-color 0.3s;
 }
 
 .home-page-list button:hover {
-background-color: #000; /* Fundo preto */
-color: #fff; /* Texto branco */
+background-color: #000; 
+color: #fff; 
 }
 
-/* Estilo para seletores */
+
 .home-page-list select {
 padding: 10px;
 margin-right: 10px;
-border: 1px solid #fff; /* Borda branca */
+border: 1px solid #fff;
 border-radius: 4px;
 }
 
-/* Estilo para a tabela */
+
 .home-page-list table {
 width: 100%;
 border-collapse: collapse;
 }
 
 .home-page-list table th, .home-page-list table td {
-border: 1px solid #fff; /* Borda branca */
-padding: 8px; /* Reduzir o preenchimento */
+border: 1px solid #fff; 
+padding: 8px; 
 text-align: center;
-font-size: 14px; /* Tamanho da fonte reduzido */
+font-size: 14px; 
 }
 
 .home-page-list table th {
-background-color: #000; /* Fundo preto */
-color: #fff; /* Texto branco */
+background-color: #000; 
+color: #fff; 
 }
 
 .home-page-list table tr:nth-child(even) {
-background-color: #000; /* Fundo preto */
-color: #fff; /* Texto branco */
+background-color: #000; 
+color: #fff; 
 }
 
 
-/* Modal.css ----------------------------------------------- */
+
 
 .modal-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.651); 
   position: fixed;
   top: 0;
   left: 0;
@@ -130,7 +130,7 @@ color: #fff; /* Texto branco */
 }
 
 .modal-content {
-  background-color: #fff; /* Fundo branco */
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   max-width: 600px;
@@ -156,23 +156,23 @@ color: #fff; /* Texto branco */
 }
 
 .modal-button.close {
-  background-color: #007bff; /* Fundo azul */
-  color: #fff; /* Texto branco */
+  background-color: #007bff; 
+  color: #fff; 
   transition: background-color 0.3s;
 }
 
 .modal-button.close:hover {
-  background-color: #0056b3; /* Fundo azul mais escuro ao passar o mouse */
+  background-color: #b30000; 
 }
 
 .modal-button.primary {
-  background-color: #28a745; /* Fundo verde */
-  color: #fff; /* Texto branco */
+  background-color: #28a745; 
+  color: #fff; 
   transition: background-color 0.3s;
 }
 
 .modal-button.primary:hover {
-  background-color: #218838; /* Fundo verde mais escuro ao passar o mouse */
+  background-color: #218838; 
 }
 
 .fade-in {

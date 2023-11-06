@@ -14,18 +14,16 @@ interface FormData {
 
 const AddUser: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '' });
-  const router= useRouter(); // Use useNavigate para navegação
-
+  const router= useRouter(); 
   const handleSubmit = () => {
-    // Implemente a lógica para enviar os dados do novo usuário para o backend
+ 
     api
       .post('/usuarios', formData)
       .then((response) => {
-        // Se a criação for bem-sucedida, você pode redirecionar para a lista de usuários
+        
         router.push('http://localhost:3001');
       })
       .catch((error) => {
-        // Em caso de erro, você pode exibir uma mensagem de erro para o usuário
         console.error('Erro ao criar o usuário:', error);
       });
   };
