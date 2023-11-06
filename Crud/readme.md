@@ -47,15 +47,16 @@ Para executar este aplicativo em sua máquina, siga as seguintes etapas:
 
 Certifique-se de seguir as instruções detalhadas em cada parte do projeto para configurar adequadamente o ambiente.
 
-
 ## Repositório no GitHub
 
 Você pode encontrar o código-fonte deste projeto no seguinte repositório do GitHub:
 
 [Link para o Repositório](https://github.com/Milly66k/Crud-React-TypeScript)
 
-## Notas
+## Feedback e Melhorias
 
-Este teste prático me permitiu aprimorar minhas habilidades em desenvolvimento FullStack, trabalhando com React, Node.js e integração com banco de dados. Foi uma ótima experiência de aprendizado e estou ansioso para receber feedback sobre meu código e projeto.
+Este teste prático me permitiu aprimorar minhas habilidades em desenvolvimento FullStack, trabalhando com React, Node.js e integração com banco de dados. 
 
+Feedback é bem-vindo! Se você tiver sugestões ou melhorias para este projeto, fique à vontade para compartilhá-las. Seu feedback é valioso e contribuirá para meu crescimento como desenvolvedora FullStack.
 
+Obrigada por revisar meu trabalho!

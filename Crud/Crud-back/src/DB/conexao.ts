@@ -16,4 +16,4 @@ const knex = conexao({
     debug: true,
 });
 
-export { knex }; // Exporte knex diretamente
+export { knex }; 

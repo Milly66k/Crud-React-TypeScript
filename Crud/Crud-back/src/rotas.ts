@@ -8,6 +8,7 @@ rotas.get('/usuarios/:id', controlador.obter);
 rotas.post('/usuarios', controlador.cadastrar);
 rotas.put('/usuarios/:id', controlador.atualizar);
 rotas.delete('/usuarios/:id', controlador.excluir);
+rotas.get('/usuarios/filtrar', controlador.filtrarPorData);
 
 export default rotas;
 

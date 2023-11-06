@@ -1,190 +1,272 @@
-/* App.css */
-
-.header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-.main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-.app {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
-
-/* styles/UserList.css */
-/* Estilo para o contêiner principal */
+/* Estilos gerais */
 .App {
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-background-color: #000; 
-}
-
-/* Estilo para o contêiner de lista */
-.home-page-list {
-background-color: #000; 
-color: #fff; 
-border-radius: 8px;
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-padding: 20px;
-max-width: 800px;
-width: 100%;
-}
-
-
-.home-page-list h1 {
-font-size: 24px;
-margin-bottom: 20px;
-}
-
-
-.home-page-list input[type="text"] {
-width: 100%;
-padding: 8px; 
-margin-bottom: 10px;
-border: 1px solid #fff; 
-border-radius: 4px;
-font-size: 14px; 
-}
-
-/* Estilo para botões */
-.home-page-list button {
-background-color: #fff; 
-color: #000;
-border: none;
-padding: 10px 20px;
-border-radius: 4px;
-cursor: pointer;
-transition: background-color 0.3s;
-}
-
-.home-page-list button:hover {
-background-color: #000; 
-color: #fff; 
-}
-
-
-.home-page-list select {
-padding: 10px;
-margin-right: 10px;
-border: 1px solid #fff;
-border-radius: 4px;
-}
-
-
-.home-page-list table {
-width: 100%;
-border-collapse: collapse;
-}
-
-.home-page-list table th, .home-page-list table td {
-border: 1px solid #fff; 
-padding: 8px; 
-text-align: center;
-font-size: 14px; 
-}
-
-.home-page-list table th {
-background-color: #000; 
-color: #fff; 
-}
-
-.home-page-list table tr:nth-child(even) {
-background-color: #000; 
-color: #fff; 
-}
-
-
-
-
-.modal-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.651); 
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
 }
 
-.modal-content {
-  background-color: #fff;
+/* Estilos da lista na página principal */
+.home-page-list {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
-  width: 100%;
   padding: 20px;
+  width: 100%;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
 }
 
-.modal-header {
+.home-page-list h1 {
   font-size: 24px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-.modal-footer {
-  display: flex;
-  justify-content: space-between;
+.home-page-list input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
-.modal-button {
+.home-page-list button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.modal-button.close {
-  background-color: #007bff; 
-  color: #fff; 
   transition: background-color 0.3s;
 }
 
-.modal-button.close:hover {
-  background-color: #b30000; 
+.home-page-list button:hover {
+  background-color: #000;
+  color: #fff;
 }
 
-.modal-button.primary {
-  background-color: #28a745; 
-  color: #fff; 
+.home-page-list select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.home-page-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.home-page-list table th, .home-page-list table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
   transition: background-color 0.3s;
 }
 
-.modal-button.primary:hover {
-  background-color: #218838; 
+.home-page-list table th {
+  background-color: #fff;
+  color: #000;
 }
 
-.fade-in {
-  animation: fadeIn 0.5s;
+.home-page-list table tr:nth-child(even) {
+  background-color: #fff;
+  color: #000;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+.home-page-list table td:hover {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para a seção de pesquisa e classificação */
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-and-sort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-section, .sort-section {
+  display: flex;
+  align-items: center;
+}
+
+.search-section input[type="text"] {
+  margin-right: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.sort-section label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.sort-section select {
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.sort-section button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilos do modal */
+.modal {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-top: 100px;
+  max-width: 90%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.modal-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.open-modal-button {
+  background-color: #ccc;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.open-modal-button:hover {
+  background-color: #999;
+  color: #fff;
+}
+
+.modal-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-items: center;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer button {
+  margin-right: 10px;
+}
+
+/* Estilos para a seção de adição de usuário */
+.add-user-container {
+  text-align: center;
+}
+
+.add-user-input {
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+
+.add-user-button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-user-button:hover {
+  background-color: #ddd;
+}
+
+/* Estilos para a seção de edição de usuário */
+.edit-user-container {
+  text-align: center;
+}
+
+.edit-user-input {
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+
+.edit-user-button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.edit-user-button:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    display: none;
   }
-  to {
-    opacity: 1;
-  }
+}
+
+.delete-user-container {
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.delete-user-input {
+  margin: 10px 0; /* Adiciona espaço entre os inputs */
+  border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior */
+  padding: 5px;
+  width: 100%;
+}
+
+.delete-user-button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* Centraliza horizontalmente */
+  margin: 0 auto;
+}
+
+.delete-user-button:hover {
+  background-color: #ddd; /* Cor de fundo mais clara no hover */
 }
 
