@@ -1,0 +1,190 @@
+/* App.css */
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* styles/UserList.css */
+/* Estilo para o contêiner principal */
+.App {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #000; /* Fundo preto */
+}
+
+/* Estilo para o contêiner de lista */
+.home-page-list {
+background-color: #000; /* Fundo preto */
+color: #fff; /* Texto branco */
+border-radius: 8px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+padding: 20px;
+max-width: 800px;
+width: 100%;
+}
+
+/* Estilo para títulos */
+.home-page-list h1 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+/* Estilo para campos de entrada de texto */
+.home-page-list input[type="text"] {
+width: 100%;
+padding: 8px; /* Reduzir o tamanho do preenchimento */
+margin-bottom: 10px;
+border: 1px solid #fff; /* Borda branca */
+border-radius: 4px;
+font-size: 14px; /* Tamanho da fonte reduzido */
+}
+
+/* Estilo para botões */
+.home-page-list button {
+background-color: #fff; /* Fundo branco */
+color: #000; /* Texto preto */
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.home-page-list button:hover {
+background-color: #000; /* Fundo preto */
+color: #fff; /* Texto branco */
+}
+
+/* Estilo para seletores */
+.home-page-list select {
+padding: 10px;
+margin-right: 10px;
+border: 1px solid #fff; /* Borda branca */
+border-radius: 4px;
+}
+
+/* Estilo para a tabela */
+.home-page-list table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.home-page-list table th, .home-page-list table td {
+border: 1px solid #fff; /* Borda branca */
+padding: 8px; /* Reduzir o preenchimento */
+text-align: center;
+font-size: 14px; /* Tamanho da fonte reduzido */
+}
+
+.home-page-list table th {
+background-color: #000; /* Fundo preto */
+color: #fff; /* Texto branco */
+}
+
+.home-page-list table tr:nth-child(even) {
+background-color: #000; /* Fundo preto */
+color: #fff; /* Texto branco */
+}
+
+
+/* Modal.css ----------------------------------------------- */
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-content {
+  background-color: #fff; /* Fundo branco */
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+
+.modal-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-button.close {
+  background-color: #007bff; /* Fundo azul */
+  color: #fff; /* Texto branco */
+  transition: background-color 0.3s;
+}
+
+.modal-button.close:hover {
+  background-color: #0056b3; /* Fundo azul mais escuro ao passar o mouse */
+}
+
+.modal-button.primary {
+  background-color: #28a745; /* Fundo verde */
+  color: #fff; /* Texto branco */
+  transition: background-color 0.3s;
+}
+
+.modal-button.primary:hover {
+  background-color: #218838; /* Fundo verde mais escuro ao passar o mouse */
+}
+
+.fade-in {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
