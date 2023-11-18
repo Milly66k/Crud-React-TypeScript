@@ -9,7 +9,7 @@ Este é o meu projeto para o teste prático da posição de FullStack. O desafio
 - Node.js / Typescript
 
 **Banco de Dados:**
-- (Banco de Dados Escolhido)
+- PostegresSQL
 
 ## Descrição do Projeto
 
